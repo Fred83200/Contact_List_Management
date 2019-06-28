@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new
+    @managers = User.all.where(manager: true)
   end
 
   def create
@@ -31,6 +32,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager_name)
+    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager_id)
   end
 end

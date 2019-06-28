@@ -11,12 +11,12 @@
       <%= f.input :last_name %>
       <%= f.input :email %>
       <%= f.input :department %>
-      <%= f.input :manager %>
+      <%= f.input :manager_id, collection: User.where(manager: true), label_method: :last_name %>
       </div>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, class: "btn btn-primary"%>
+      <%= f.button :submit, value: "Confirm & Submit", name: "submit", class: "btn btn-primary"%>
     </div>
   <% end %>
 </div>
