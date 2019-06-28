@@ -1,3 +1,3 @@
 class Contact < ApplicationRecord
-  belongs_to :manager
+  belongs_to :manager, class_name: "User"
 end

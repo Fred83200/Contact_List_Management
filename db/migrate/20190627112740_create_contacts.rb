@@ -6,9 +6,10 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :email
       t.string :department
-      t.references :manager, foreign_key: true
+      t.references :manager
 
       t.timestamps
     end
+    add_foreign_key :contacts, :users, column: :manager_id, primary_key: :id
   end
 end

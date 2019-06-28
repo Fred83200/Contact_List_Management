@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="text-center my-3">Create a Contact</h1>
+
+  <%= simple_form_for(@contact) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+    <div class="form-inputs" >
+      <div class="input-name" style="width: 35%;">
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :email %>
+      <%= f.input :department %>
+      <%= f.input :manager %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, class: "btn btn-primary"%>
+    </div>
+  <% end %>
+</div>

@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  before_action only: :show
+  skip_before_action only: :index
 
   def index
     @contacts = Contact.all
@@ -15,8 +15,8 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @cocktail.save
-      redirect_to cocktail_path(@contact)
+    if @contact.save
+      redirect_to contact_path(@contact)
     else
       render :new
     end
@@ -31,6 +31,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager)
+    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager_name)
   end
 end
