@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <div class="banner-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.dribbble.com/users/79929/screenshots/2807602/sm-v4.3.png)">
+      <div class="container" style="height: 100vh">
+        <h1>Welcome in <strong>Your Contact Manager</strong> !</h1>
+        <p>Create, Store & Contact</p>
+
+          <%= link_to 'Create Contact', new_contact_path, class: "btn btn-primary nav-link" %>
+         <!--     <a class="btn btn-flat" href="#">Apply now</a> -->
+      </div>
+    </div>

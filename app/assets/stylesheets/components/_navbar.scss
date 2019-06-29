@@ -10,3 +10,14 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-link {
+  color: white!important;
+  padding: 3px;
+  width: fit-content;
+&:hover {
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+  transition: 1000ms;
+}
+}

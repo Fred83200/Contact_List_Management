@@ -32,6 +32,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager_id)
+    params.require(:contact).permit(:first_name, :last_name, :address, :email, :manager_id, :department)
   end
 end

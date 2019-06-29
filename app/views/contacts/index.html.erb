@@ -1,1 +1,17 @@
-
+<div class="container">
+  <div class="contacts">
+    <div class="contact-cards">
+      <% @contacts.each do |contact| %>
+      <div class="card">
+        <%= link_to contact_path(contact), style: "width: 100%", class: "card-link" do %>
+        <div class="contact-infos">
+          <h2><%= contact.first_name.capitalize %></h2>
+          <h2><%= contact.last_name.capitalize %></h2>
+        </div>
+          <p class="department">Department: <%= contact.department %></p>
+        <% end  %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

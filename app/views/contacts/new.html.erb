@@ -9,9 +9,10 @@
       <div class="input-name" style="width: 35%;">
       <%= f.input :first_name %>
       <%= f.input :last_name %>
+      <%= f.input :address %>
       <%= f.input :email %>
       <%= f.input :department %>
-      <%= f.input :manager_id, collection: User.where(manager: true), label_method: :last_name %>
+      <%= f.input :manager_id, collection: User.where(manager: true), label_method: :first_name %>
       </div>
     </div>
 
