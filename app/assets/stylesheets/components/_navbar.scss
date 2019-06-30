@@ -12,12 +12,15 @@
 }
 
 .nav-link {
-  color: white!important;
+  color: white;
   padding: 3px;
   width: fit-content;
 &:hover {
   background-color: $dark-blue;
   border-color: $dark-blue;
   transition: 1000ms;
+  color: black;
 }
 }
+
+
