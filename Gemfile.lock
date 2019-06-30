@@ -196,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootsnap
+  bundler
   devise
   dotenv-rails
   font-awesome-sass (~> 5.6.1)
