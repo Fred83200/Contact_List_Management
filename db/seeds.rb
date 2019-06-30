@@ -1,4 +1,3 @@
-
 roles = [
   {
     name: "Bar Manager",
@@ -15,38 +14,38 @@ roles = [
     }
   },
   {
-    name: "Floor Manager"
+    name: "Floor Manager",
     permissions: {
       admin: false,
       manager: true,
     }
   },
   {
-    name: "Chef Cuisine"
+    name: "Chef Cuisine",
     permissions: {
-      admin: false
-      manager: true
+      admin: false,
+      manager: true,
     }
   },
   {
-    name: "Sommelier Manager"
+    name: "Sommelier Manager",
     permissions: {
-      admin: false
-      manager: true
+      admin: false,
+      manager: true,
     }
   },
   {
-    name: "Receptionnist Manager"
+    name: "Receptionnist Manager",
     permissions: {
-      admin: false
-      manager: true
+      admin: false,
+      manager: true,
     }
   },
   {
-    name: "Security Manager"
+    name: "Security Manager",
     permissions: {
-      admin: false
-      manager: true
+      admin: false,
+      manager: true,
     }
   }
 ]
@@ -99,7 +98,7 @@ users_attributes = [
   {
     email: "bastien.manager@gmail.com",
     first_name: "bastien",
-    last_name: "renet"
+    last_name: "renet",
     password: "123456",
     password_confirmation: "123456",
     role: "Bar Manager",
@@ -109,7 +108,7 @@ users_attributes = [
   {
     email: "sophie.manager@gmail.com",
     first_name: "sophie",
-    last_name: "jude"
+    last_name: "jude",
     password: "123456",
     password_confirmation: "123456",
     role: "Floor Manager",
@@ -119,7 +118,7 @@ users_attributes = [
   {
     email: "piotr.manager@gmail.com",
     first_name: "piotr",
-    last_name: "puznic"
+    last_name: "puznic",
     password: "123456",
     password_confirmation: "123456",
     role: "Security Manager",
