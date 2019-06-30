@@ -1,6 +1,5 @@
 class ContactsController < ApplicationController
-  skip_before_action only: :index
-
+  skip_before_action only: %i[index show create new]
   def index
     @contacts = Contact.all
   end

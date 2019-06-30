@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-8">
   <h1 class="text-center my-3">Create a Contact</h1>
 
   <%= simple_form_for(@contact) do |f| %>
@@ -6,14 +6,12 @@
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
     <div class="form-inputs" >
-      <div class="input-name" style="width: 35%;">
       <%= f.input :first_name %>
       <%= f.input :last_name %>
       <%= f.input :address %>
       <%= f.input :email %>
       <%= f.input :department %>
       <%= f.input :manager_id, collection: User.where(manager: true), label_method: :first_name %>
-      </div>
     </div>
 
     <div class="form-actions">

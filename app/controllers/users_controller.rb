@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show edit update destroy]
-
   def show
     authorize @user
   end
@@ -12,7 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.save
-    redirect_to user_path(@user)
+    redirect_to contacts_path
   end
 
   def edit
@@ -22,7 +21,7 @@ class UsersController < ApplicationController
   def update
     authorize @user
     if @user.update(update_params)
-      redirect_to user_path(@user)
+      redirect_to root_path
     else
       render :edit
     end

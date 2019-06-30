@@ -1,2 +1,18 @@
-
-<h1>hello</h1>
+<div class="container">
+  <div class="contact">
+    <div class="contact-card">
+      <h2 class="card-title">Employee's Details:</h2>
+      <h2 class="card-name"><%= @contact.first_name.capitalize %> <%= @contact.last_name.capitalize %></h2>
+      <p class="infos_show">Email address: <%= @contact.email %></p>
+      <p class="infos_show">Home address: <%= @contact.address %></p>
+      <p class="infos_show">Department: <%= @contact.department %></p>
+    </div>
+    <div class="manager-card">
+      <h2 class="card-title">Employee's Manager:</h2>
+      <h2 class="card-name"><%= @contact.manager.first_name.capitalize %> <%= @contact.manager.last_name.capitalize %></h2>
+      <p class="infos_show"><%= @contact.manager.role %></p>
+      <hr>
+      <p class="infos_show"><%= @contact.manager.email %></p>
+    </div>
+  </div>
+</div>
