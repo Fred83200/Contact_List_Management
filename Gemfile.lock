@@ -197,7 +197,6 @@ DEPENDENCIES
   autoprefixer-rails
   bootsnap
   devise
-  bundler
   dotenv-rails
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.0)
